@@ -1,2 +1,2 @@
 # Mathematics
-- [Linear Algebra](./concepts/linalg.ipynb)
+- [Linear Algebra](./concepts/linalg.md)

@@ -78,7 +78,7 @@ However, if they are not orthnormal, we should adjust the coefficients consideri
 
 Moreover, there can be a high-dimensional space.
 
-So, it can be represented as Matrix $A$.
+So, it can be represented as Matrix $A$.  
 $$
 A = \begin{bmatrix} \mid & \mid & & \mid \\ \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n \\ \mid & \mid & & \mid \end{bmatrix}
 $$

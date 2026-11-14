@@ -3,6 +3,12 @@ import numpy as np
 from manimlib import *
 
 
+'''
+.venv/bin/python -m manimlib code/projection.py \
+  ProjectionScene ThreeDSubspaceProjection ErrorVectorScene \
+  -l -w --video_dir /tmp/math-manim-mp4
+  '''
+
 class ProjectionScene(Scene):
     def construct(self):
         plane = NumberPlane(

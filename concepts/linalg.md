@@ -9,12 +9,12 @@
 Focus on challenging concepts and areas that need deeper understanding.  
 
 
-Reference: https://linear.axler.net/LADR4e.pdf
+Reference: https://linear.axler.net/LADR4e.pdf   
 gif generator: https://github.com/3b1b/manim
 
-## Orthogonal Projection
+# Orthogonal Projection
 
-# vector-to-vectior Orthogonal Projection
+## vector-to-vectior Orthogonal Projection
 
 
 ```math
@@ -27,7 +27,7 @@ The projection of v onto u is a vector parallel to u. Its length is |u · v| / |
 
 https://github.com/user-attachments/assets/3a130918-fdf0-4f2d-af31-2eae01d3e150
 
-# vector-to-space Orthogonal Projection
+## vector-to-space Orthogonal Projection
 
 But it's only for vector-to-vector. There is orthogonal projection for vector-to-space.  
 

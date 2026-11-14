@@ -9,7 +9,7 @@
 Focus on challenging concepts and areas that need deeper understanding.  
 
 
-Reference: https://linear.axler.net/LADR4e.pdf  
+Reference: https://linear.axler.net/LADR4e.pdf
 gif generator: https://github.com/3b1b/manim
 
 ## Orthogonal Projection
@@ -17,15 +17,13 @@ gif generator: https://github.com/3b1b/manim
 # vector-to-vectior Orthogonal Projection
 
 
-$$
-\mathrm{proj}_{\mathbf u}(\mathbf v)
-=\frac{\mathbf v\cdot\mathbf u}{\mathbf u\cdot\mathbf u}\mathbf u
-$$
+$$\operatorname{proj}_{\mathbf u}(\mathbf v)
+=\frac{\mathbf v\cdot\mathbf u}{\mathbf u\cdot\mathbf u}\mathbf u$$
 
 The projection of v onto u is a vector parallel to u. Its length is |u · v| / ||u||.
 
 
-  https://github.com/user-attachments/assets/3a130918-fdf0-4f2d-af31-2eae01d3e150
+https://github.com/user-attachments/assets/3a130918-fdf0-4f2d-af31-2eae01d3e150
 
 # vector-to-space Orthogonal Projection
 
@@ -40,8 +38,7 @@ Follow these steps.
 2. Project u onto v2.
 3. Add the two projections.
 
-
-  https://github.com/user-attachments/assets/6505c997-c7ab-44eb-87b9-1ec7181efb92      
+https://github.com/user-attachments/assets/6505c997-c7ab-44eb-87b9-1ec7181efb92
 
 
 ## How to projection with non-orthogonal vectors?
@@ -54,9 +51,7 @@ When we should use orthogonal matrix?
 - No correct answer for Ax = b(Least square problem)  
 
 
-$$
-p = \Big( A (A^T A)^{-1} A^T \Big) u
-$$
+$$p = \Big( A (A^T A)^{-1} A^T \Big) u$$
 
 
 Orthogonal matrix looks like this.
@@ -78,33 +73,10 @@ However, if they are not orthnormal, we should adjust the coefficients consideri
 
 Moreover, there can be a high-dimensional space.
 
-So, it can be represented as a matrix $A$:
-
-$$
-A = \begin{bmatrix}
-\mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n
-\end{bmatrix}
-$$
-
-The inner products used in the projection steps (1, 2, 3, 4, ...) can be calculated using $A^T\mathbf{u}$:
-
-$$
-A^T \mathbf{u}
-=
-\begin{bmatrix}
-\mathbf{v}_1^T \mathbf{u} \\
-\mathbf{v}_2^T \mathbf{u} \\
-\vdots \\
-\mathbf{v}_n^T \mathbf{u}
-\end{bmatrix}
-=
-\begin{bmatrix}
-\mathbf{v}_1 \cdot \mathbf{u} \\
-\mathbf{v}_2 \cdot \mathbf{u} \\
-\vdots \\
-\mathbf{v}_n \cdot \mathbf{u}
-\end{bmatrix}
-$$
+So, it can be represented as Matrix $A$.
+$$A = \begin{bmatrix} \mid & \mid & & \mid \\ \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n \\ \mid & \mid & & \mid \end{bmatrix}$$
+The inner products used in the projection steps (1,2,3,4...) can be calculated using $A^T\mathbf{u}$.
+$$A^T \mathbf{u} = \begin{bmatrix} \mathbf{v}_1^T \mathbf{u} \\ \mathbf{v}_2^T \mathbf{u} \\ \vdots \\ \mathbf{v}_n^T \mathbf{u} \end{bmatrix} = \begin{bmatrix} \mathbf{v}_1 \cdot \mathbf{u} \\ \mathbf{v}_2 \cdot \mathbf{u} \\ \vdots \\ \mathbf{v}_n \cdot \mathbf{u} \end{bmatrix}$$
 
 We have calculated the inner products between $\mathbf{u}$ and each basis vector. If the basis vectors are orthonormal, these inner products are exactly the coefficients we need.
 
@@ -122,7 +94,7 @@ Ac is the orthogonal projection vector.
 So, u-Ac will be the error vector.
 
 
-  https://github.com/user-attachments/assets/2024085f-593a-484b-a47c-961965a6a604 
+https://github.com/user-attachments/assets/2024085f-593a-484b-a47c-961965a6a604
 
 As we can see, error vector and orthogonal vector is vertical.  
 So these equation would be accepted.  
@@ -152,11 +124,11 @@ We can finally get the vector p, which is orthogonal vector, by multiplying matr
 P = cA (inner product vector c with each column vector of $A$)
 
 There is an Orthogonal Projection Vector.   
-$$
-\mathbf p=A(A^TA)^{-1}A^T\mathbf u
-$$
+$$\mathbf p=A(A^TA)^{-1}A^T\mathbf u$$
 
 
+  https://github.com/user-attachments/assets/3a130918-fdf0-4f2d-af31-2eae01d3e150
 
-             
+  https://github.com/user-attachments/assets/6505c997-c7ab-44eb-87b9-1ec7181efb92                   
                                                                                                     
+  https://github.com/user-attachments/assets/2024085f-593a-484b-a47c-961965a6a604 

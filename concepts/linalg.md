@@ -18,7 +18,7 @@ gif generator: https://github.com/3b1b/manim
 
 
 $$
-\operatorname{proj}_{\mathbf u}(\mathbf v)
+\mathrm{proj}_{\mathbf u}(\mathbf v)
 =\frac{\mathbf v\cdot\mathbf u}{\mathbf u\cdot\mathbf u}\mathbf u
 $$
 
@@ -78,13 +78,32 @@ However, if they are not orthnormal, we should adjust the coefficients consideri
 
 Moreover, there can be a high-dimensional space.
 
-So, it can be represented as Matrix $A$.  
+So, it can be represented as a matrix $A$:
+
 $$
-A = \begin{bmatrix} \mid & \mid & & \mid \\ \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n \\ \mid & \mid & & \mid \end{bmatrix}
+A = \begin{bmatrix}
+\mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_n
+\end{bmatrix}
 $$
-The inner products used in the projection steps (1,2,3,4...) can be calculated using $A^T\mathbf{u}$.
+
+The inner products used in the projection steps (1, 2, 3, 4, ...) can be calculated using $A^T\mathbf{u}$:
+
 $$
-A^T \mathbf{u} = \begin{bmatrix} \mathbf{v}_1^T \mathbf{u} \\ \mathbf{v}_2^T \mathbf{u} \\ \vdots \\ \mathbf{v}_n^T \mathbf{u} \end{bmatrix} = \begin{bmatrix} \mathbf{v}_1 \cdot \mathbf{u} \\ \mathbf{v}_2 \cdot \mathbf{u} \\ \vdots \\ \mathbf{v}_n \cdot \mathbf{u} \end{bmatrix}
+A^T \mathbf{u}
+=
+\begin{bmatrix}
+\mathbf{v}_1^T \mathbf{u} \\
+\mathbf{v}_2^T \mathbf{u} \\
+\vdots \\
+\mathbf{v}_n^T \mathbf{u}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\mathbf{v}_1 \cdot \mathbf{u} \\
+\mathbf{v}_2 \cdot \mathbf{u} \\
+\vdots \\
+\mathbf{v}_n \cdot \mathbf{u}
+\end{bmatrix}
 $$
 
 We have calculated the inner products between $\mathbf{u}$ and each basis vector. If the basis vectors are orthonormal, these inner products are exactly the coefficients we need.

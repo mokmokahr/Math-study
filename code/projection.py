@@ -7,7 +7,15 @@ from manimlib import *
 .venv/bin/python -m manimlib code/projection.py \
   ProjectionScene ThreeDSubspaceProjection ErrorVectorScene \
   -l -w --video_dir /tmp/math-manim-mp4
-  '''
+
+
+gh issue comment 1 \
+  --body $'![](media/projection.mp4)\n\n![](media/projection2.mp4)\n\n![](media/projection3.mp4)' \
+  --attach media/projection.mp4 \
+  --attach media/projection2.mp4 \
+  --attach media/projection3.mp4
+  
+'''
 
 class ProjectionScene(Scene):
     def construct(self):
